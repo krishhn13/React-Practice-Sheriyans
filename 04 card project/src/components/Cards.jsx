@@ -3,12 +3,12 @@ import { Bookmark } from "lucide-react"
 
 const Cards = (props) => {
   console.log(props.company);
-  
+
   return (
     <div>
       <div className="card">
         <div className="top">
-          <img src= {props.logo} alt="here's the logo" />
+          <img src={props.logo} alt="here's the logo" />
           <button>Save <Bookmark size={12} /> </button>
         </div>
         <div className="center">
