@@ -30,9 +30,10 @@ const App = () => {
           </form>
         </div>
       </div>
-      <h1 className='h-10 text-5xl font-extrabold items-center'>
+      <h1 className='h-10 text-5xl font-extrabold items-center p-10'>
         Recent Tasks
       </h1>
+      <br />
       <div className='flex flex-wrap gap-5 p-5'>
         {arr.map(function (elem, idx) {
           return <Card
