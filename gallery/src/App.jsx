@@ -7,15 +7,15 @@ const App = () => {
 
   const [idx, setIdx] = useState(1);
 
-  const prevPage = ()=>{
-    if(idx>1) {
+  const prevPage = () => {
+    if (idx > 1) {
       console.log("Page Going back")
-      setIdx(idx-1);
+      setIdx(idx - 1);
     }
-  } 
+  }
   const nextPage = () => {
     console.log("Page Rendering Start");
-    setIdx(idx+1);
+    setIdx(idx + 1);
   }
 
   const helloData = async () => {
@@ -33,7 +33,7 @@ const App = () => {
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     helloData();
   }, [idx])
 
@@ -47,7 +47,7 @@ const App = () => {
                 <img
                   src={`https://picsum.photos/id/${elem.id}/300/300`}
                   alt=""
-                  className='h-40 w-40 object-cover rounded'
+                  className='h-40 w-50 object-cover rounded'
                 />
                 <h1>
                   {elem.author}
